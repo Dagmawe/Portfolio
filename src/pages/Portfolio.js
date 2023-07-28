@@ -28,57 +28,13 @@ const Portfolio = () => {
         <div className="container mx-auto h-full relative">
           <div className="flex flex-col lg:flex-row h-full items-center justify-start gap-x-24 text-center lg:text-left pt-24 lg:pt-36 pb-8">
             <motion.div
-              initial={{ opacity: 0, y: "-80%" }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: "-80%" }}
+              initial={{ opacity: 0, x: "-80%" }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: "-90%" }}
               transition={transition1}
               className="flex flex-col lg:items-start"
             >
               <div className="flex lg:items-start">
-                {/* <div className="grid grid-cols-3 gap-2 ">
-                  <div className="max-w-[150px] lg:max-w-[220px] h-[87px] lg:h-[120px] bg-accent overflow-hidden">
-                    <img
-                      src={p1}
-                      alt=""
-                      className="object-cover h-full lg:h-[1S20px]  hover:scale-110 transition-all duration-500"
-                    />
-                  </div>
-                  <div className="max-w-[150px] lg:max-w-[220px] h-[87px] lg:h-[120px] bg-accent overflow-hidden">
-                    <img
-                      src={p1}
-                      alt=""
-                      className="object-cover h-full lg:h-[1S20px]  hover:scale-110 transition-all duration-500"
-                    />
-                  </div>
-                  <div className="max-w-[150px] lg:max-w-[220px] h-[87px] lg:h-[120px] bg-accent overflow-hidden">
-                    <img
-                      src={p1}
-                      alt=""
-                      className="object-cover h-full lg:h-[1S20px]  hover:scale-110 transition-all duration-500"
-                    />
-                  </div>
-                  <div className="max-w-[150px] lg:max-w-[220px] h-[87px] lg:h-[120px] bg-accent overflow-hidden">
-                    <img
-                      src={p1}
-                      alt=""
-                      className="object-cover h-full lg:h-[1S20px]  hover:scale-110 transition-all duration-500"
-                    />
-                  </div>
-                  <div className="max-w-[150px] lg:max-w-[220px] h-[87px] lg:h-[120px] bg-accent overflow-hidden">
-                    <img
-                      src={p1}
-                      alt=""
-                      className="object-cover h-full lg:h-[1S20px]  hover:scale-110 transition-all duration-500"
-                    />
-                  </div>
-                  <div className="max-w-[150px] lg:max-w-[220px] h-[87px] lg:h-[120px] bg-accent overflow-hidden">
-                    <img
-                      src={p1}
-                      alt=""
-                      className="object-cover h-full lg:h-[1S20px]  hover:scale-110 transition-all duration-500"
-                    />
-                  </div>
-                </div> */}
                 <div className="grid grid-cols-3 gap-2 ">
                   <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="https://github.com/Dagmawe/Senior_Project_CRS_App">
