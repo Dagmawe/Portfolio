@@ -1,9 +1,19 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { transition1 } from "../transitions";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
 const Contact = () => {
+  const [isAlert, setIsAlert] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsAlert(true);
+
+    setTimeout(() => {
+      setIsAlert(false);
+    }, 3000);
+  };
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -22,7 +32,7 @@ const Contact = () => {
           document.getElementById("name").value = "";
           document.getElementById("email").value = "";
           document.getElementById("message").value = "";
-          alert("Message sent!");
+          handleButtonClick();
         },
         (error) => {
           console.log(error.text);
@@ -150,12 +160,42 @@ const Contact = () => {
                 placeholder="Leave a message..."
               ></textarea>
             </div>
-            <button
-              type="submit"
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full hover:scale-110"
-            >
-              Send message
-            </button>
+            <div className="flex flex-row">
+              <button
+                type="submit"
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full hover:scale-110"
+              >
+                Send message
+              </button>
+              {isAlert && (
+                <motion.div
+                  initial={{ opacity: 0, x: "100%" }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: "100%" }}
+                  className="flex w-full h-max justify-end mb-10 "
+                >
+                  <div class="flex w-96 shadow-lg scale-75 rounded-lg absolute ">
+                    <div class="bg-green-600 py-4 px-6 rounded-l-lg flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="text-white fill-current"
+                        viewBox="0 0 16 16"
+                        width="20"
+                        height="20"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="px-4 py-6 bg-white rounded-r-lg flex justify-between items-center w-full border border-l-transparent border-gray-200">
+                      <div>Message Sent</div>
+                    </div>
+                  </div>
+                </motion.div>
+              )}
+            </div>
           </form>
         </div>
       </motion.section>
