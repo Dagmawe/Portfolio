@@ -8,9 +8,9 @@ const Header = () => {
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
         <Link to={"/"} className="max-w-[200px]">
           {/* <img src={Logo} alt="" /> */}
-          <h1 className="font-mono text-xl font-extrabold italic">
+          {/* <h1 className="font-mono text-xl font-bold italic">
             Dagmawe Legesse
-          </h1>
+          </h1> */}
         </Link>
         <nav className="hidden xl:flex gap-x-12 font-bold">
           <Link
