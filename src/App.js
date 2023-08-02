@@ -6,13 +6,13 @@ import vid from "./img/header/vid-1.mp4";
 import vid2 from "./img/header/video-2.mp4";
 const App = () => {
   return (
-    <>
-      <video src={vid} loop autoPlay muted id="bg_vid" />
+    <div>
+      {/* <video src={vid} loop autoPlay muted id="bg_vid" /> */}
       <Router>
         <Header />
         <AnimRoutes />
       </Router>
-    </>
+    </div>
   );
 };
 

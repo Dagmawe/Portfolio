@@ -20,10 +20,11 @@ const Portfolio = () => {
   return (
     <>
       <motion.section
-        initial={{ opacity: 0, y: "100%" }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: "100%" }}
-        className="section"
+        // initial={{ opacity: 0, y: "100%" }}
+        // animate={{ opacity: 1, y: 0 }}
+        // exit={{ opacity: 0, y: "100%" }}
+        // exit={{ opacity: 0, x: "-90%" }}
+        className="section bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"
       >
         <div className="container mx-auto h-full relative">
           <div className="flex flex-col lg:flex-row h-full items-center justify-start gap-x-24 text-center lg:text-left pt-24 lg:pt-36 pb-8">

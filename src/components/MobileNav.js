@@ -19,7 +19,7 @@ const menuVariants = {
 const MobileNav = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <nav className="text-primary xl:hidden">
+    <nav className="text-primary xl:hidden ">
       <div
         onClick={() => setOpenMenu(true)}
         className="text-3xl cursor-pointer"
@@ -30,7 +30,7 @@ const MobileNav = () => {
         variants={menuVariants}
         initial="hidden"
         animate={openMenu ? "show" : ""}
-        className="bg-white shadow-2xl w-full absolute top-0 right-0 max-w-xs h-screen z-20"
+        className="bg-white shadow-2xl w-full absolute top-0 right-0 max-w-xs h-screen z-20 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"
       >
         <div
           onClick={() => setOpenMenu(false)}

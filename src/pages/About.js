@@ -11,16 +11,20 @@ const About = () => {
   return (
     <>
       <motion.section
-        initial={{ opacity: 0, y: "100%" }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: "100%" }}
-        className="section flex flex-row"
+        // initial={{ opacity: 0, y: "100%" }}
+        // animate={{ opacity: 1, y: 0 }}
+        // exit={{ opacity: 0, y: "100%" }}
+        className="section flex flex-row  bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"
       >
         {show ? (
           <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            exit={{ scale: 0 }}
+            // initial={{ scale: 0 }}
+            // animate={{ scale: 1 }}
+            // exit={{ scale: 0 }}
+            // transition={transition1}
+            initial={{ opacity: 0, y: "100%" }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: "100%" }}
             transition={transition1}
             className="flex flex-col gap-2 pt-20"
           >
@@ -59,9 +63,13 @@ const About = () => {
           <div className="container mx-auto h-full relative">
             <div className="flex flex-col lg:flex-row h-full items-center justify-start gap-x-24 text-center lg:text-left pt-24 lg:pt-36 pb-8">
               <motion.div
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                exit={{ scale: 0 }}
+                // initial={{ scale: 0 }}
+                // animate={{ scale: 1 }}
+                // exit={{ scale: 0 }}
+                // transition={transition1}
+                initial={{ opacity: 0, x: "-80%" }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: "-90%" }}
                 transition={transition1}
                 className="flex flex-col  lg:items-start"
               >
@@ -75,7 +83,13 @@ const About = () => {
           </div>
         )}
 
-        <div className="container mx-auto h-full relative">
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          exit={{ scale: 0 }}
+          transition={transition1}
+          className="container mx-auto h-full relative"
+        >
           <div className="flex flex-col lg:flex-row h-full items-center justify-start gap-x-24 text-center lg:text-left pt-24 lg:pt-36 pb-8">
             <div className="flex w-full h-full justify-center flex-col">
               <div className=" flex flex-col w-full justify-center items-center gap-2">
@@ -98,7 +112,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </motion.section>
     </>
   );
