@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { transition1 } from "../transitions";
 import emailjs from "@emailjs/browser";
-import { Link } from "react-router-dom";
 const Contact = () => {
   const [isAlert, setIsAlert] = useState(false);
 
