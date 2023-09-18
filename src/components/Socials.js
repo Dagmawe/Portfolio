@@ -1,5 +1,5 @@
 import React from "react";
-import { ImGithub, ImLinkedin, ImProfile } from "react-icons/im";
+import { ImGithub, ImLinkedin } from "react-icons/im";
 
 const Socials = () => {
   return (

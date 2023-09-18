@@ -43,6 +43,7 @@ const Portfolio = () => {
                     <a
                       href="https://github.com/Dagmawe/Netflix"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <img
                         class="rounded-t-lg object-contain hover:scale-110 "
@@ -59,6 +60,7 @@ const Portfolio = () => {
                       <a
                         href="https://github.com/Dagmawe/Senior_Project_CRS_App"
                         target="_blank"
+                        rel="noreferrer"
                         className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                       >
                         Check it out
@@ -84,6 +86,7 @@ const Portfolio = () => {
                     <a
                       href="https://github.com/Dagmawe/Senior_Project_CRS_App"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <img
                         class="rounded-t-lg object-contain hover:scale-110"
@@ -100,6 +103,7 @@ const Portfolio = () => {
                       <a
                         href="https://github.com/Dagmawe/Senior_Project_CRS_App"
                         target="_blank"
+                        rel="noreferrer"
                         className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                       >
                         Check it out
@@ -125,6 +129,7 @@ const Portfolio = () => {
                     <a
                       href="https://github.com/Dagmawe/Cloud_Security_Project"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <img
                         class="rounded-t-lg justify-center object-contain hover:scale-110"
@@ -141,6 +146,7 @@ const Portfolio = () => {
                       <a
                         href="https://github.com/Dagmawe/Cloud_Security_Project"
                         target="_blank"
+                        rel="noreferrer"
                         class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                       >
                         Check it out
@@ -166,6 +172,7 @@ const Portfolio = () => {
                     <a
                       href="https://github.com/Dagmawe/ML_Project_ECE5400"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <img
                         class="rounded-t-lg object-contain hover:scale-110"
@@ -181,6 +188,7 @@ const Portfolio = () => {
                       <a
                         href="https://colab.research.google.com/drive/14d5TD-pwo3Ok429v0N2HOjahKutY_Hky"
                         target="_blank"
+                        rel="noreferrer"
                         className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                       >
                         Check it out
